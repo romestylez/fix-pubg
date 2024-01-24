@@ -1,6 +1,7 @@
 # fix-pubg
-Using this video https://www.youtube.com/watch?v=jd9YLWUgOto from @LaubsterMedia inspired me to create a Powershell Script. 
-This script will terminate the TslGame.exe with the lowest working set usage.
+After i saw this tweet -> https://twitter.com/LaubsterMedia/status/1749572275026919557 and the video https://www.youtube.com/watch?v=jd9YLWUgOto from @LaubsterMedia  i wanted to create a Powershell Script to kill the useless TslGame.exe. 
+
+This script will terminate the TslGame.exe with the lowest working set usage. You can choose how long you want to wait until the TslGame.exe will be terminated. Also you can set your Steam installation path.
 
 All credits for finding this going to https://twitter.com/LaubsterMedia
 
