@@ -29,7 +29,7 @@ The Script is using the following variables which can be changed in the top sect
 
 
 ## Converting the Script to a .exe
-To start converting this PowerShell script to EXE, get the PS2EXE tool. To do this use a PowerShell with admin rights and type:
+If you changed the variables in the Script you can convert the PowerShell Script into a .exe. To start converting this PowerShell script to EXE, get the PS2EXE tool. To do this use a PowerShell with admin rights and type:
 
 `Install-Module ps2exe`
 
