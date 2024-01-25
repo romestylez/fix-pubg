@@ -3,7 +3,7 @@
 ############################################################################
 
 # Set the path to the Steam installation directory
-$steamPath = "D:\Steam"
+$steamPath = "C:\Program Files (x86)\Steam"
 
 # Set the name of the game (PUBG)
 $gameName = "PUBG: Battlegrounds"
