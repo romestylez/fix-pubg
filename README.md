@@ -18,9 +18,6 @@ All credits for finding this going to [LaubsterMedia](https://twitter.com/Laubst
 4.) Press F5 to start the script
 
 
-
-
-
 ## Variables
 The Script is using the following variables which can be changed in the top section of the script.
 
@@ -30,3 +27,14 @@ The Script is using the following variables which can be changed in the top sect
 
 `$secondsToKill` Set how long the script should wait after launching PUBG before killing the second TslGame.exe
 
+
+## Converting the Script to a .exe
+To start converting this PowerShell script to EXE, get the PS2EXE tool. To do this use a PowerShell with admin rights and type:
+
+`Install-Module ps2exe`
+
+Then open the GUI:
+
+`win-ps2exe`
+
+After refining your PowerShell script run PS2EXE and input your PowerShell script. It will create the standalone EXE.
