@@ -55,7 +55,7 @@ $processes = Get-Process -Name tslgame
 # Check if more than one process was found
 if ($processes.Count -gt 1) {
     # Select the process with the lowest working set (RAM) usage
-    $targetProcess = $processes | Sort-Object WorkingSet | Select-Object -Last 1
+    $targetProcess = $processes | Sort-Object WorkingSet -Descending | Select-Object -Last 1
 
     Write-Host "`nTerminating the process $($targetProcess.ProcessName) (ID: $($targetProcess.Id)) with low working set usage." -ForegroundColor Green
 
