@@ -38,6 +38,7 @@ if (Test-Path $steamExePath) {
     Write-Host "`n`nLaunching $gameName." -ForegroundColor Green
 } else {
     Write-Host "`n`nError: Steam not found in your configured path." -ForegroundColor Red
+    exit
 }
 
 # Display a message before the pause
