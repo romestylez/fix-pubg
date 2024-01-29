@@ -37,4 +37,11 @@ Then open the GUI:
 
 `win-ps2exe`
 
-After refining your PowerShell script run PS2EXE and input your PowerShell script. It will create the standalone EXE.
+Here you have to select the following:
+- Compile a graphic windows program (parameter -noConsole)
+- Suppress output (-noOutput)
+- Require administrator rights at runtime (parameter -requireAdmin)
+  
+After that click on "Compile" and it will create the standalone EXE. You also can use this command directly from PowerShell ISE without the GUI
+
+`ps2exe -inputFile '<file_name>' -outputFile '<file_name>' -noOutput -requireAdmin`
