@@ -51,12 +51,12 @@ Start-Sleep -Seconds $secondsToKill
 Write-Host "`nPause completed. Searching and terminating TslGame.exe" -ForegroundColor Green
 
 # Search for all processes with the name "tslgame.exe"
-$processes = Get-Process -Name tslgame
+$processes = Get-Process -Name 'TslGame'
 
 # Check if more than one process was found
 if ($processes.Count -gt 1) {
     # Select the process with the lowest working set (RAM) usage
-    $targetProcess = $processes | Sort-Object WorkingSet -Descending | Select-Object -First 1
+    $targetProcess = $processes | Sort-Object CPU | Select-Object -First 1
 
     Write-Host "`nTerminating the process $($targetProcess.ProcessName) (ID: $($targetProcess.Id)) with low working set usage." -ForegroundColor Green
 
@@ -66,7 +66,8 @@ if ($processes.Count -gt 1) {
     Write-Host "`nOnly one process with the name tslgame.exe was found. Terminating this process." -ForegroundColor Red
 
     # Terminate the only found process
-    Stop-Process -Id $processes.Id
+    Stop-Process -Id $processes.Id -Whatif
+
 } else {
     Write-Host "`nNo process with the name tslgame.exe found." -ForegroundColor Red
 }
